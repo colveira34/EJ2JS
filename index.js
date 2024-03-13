@@ -95,3 +95,12 @@ console.log(
 console.log(
   "Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene una propiedad Ingredientes cuyo valor es un array con ingredientes"
 );
+
+for (let i = 0; i < pizzas.length; i++) {
+  for (let k = 0; k <6; k++) {
+    if (i == k) {
+      console.log(pizzas[i].nombre);
+      console.log(pizzas[k].ingredientes);
+    }
+  }
+}
